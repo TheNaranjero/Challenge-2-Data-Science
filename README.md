@@ -20,7 +20,11 @@
   - [Limpieza de la base](#2-limpieza-de-la-base)  
   - [Análisis de la base](#3-análisis-de-la-base)  
   - [Informe Final](#4-informe-final)
-- [Diccionario](#diccionario)  
+- [Conclusiones](#conclusiones)  
+- [Recomendaciones](#recomendaciones)  
+- [Limitaciones](#limitaciones)  
+- [Diccionario](#diccionario)
+- [Gráficos de muestra](#gráficos-de-muestra)
 
 
 ---
@@ -84,6 +88,42 @@ El mismo cuenta con:
 - Recomendaciones
 - Limitaciones
 
+## **CONCLUSIONES**
+A continuación se presenta un resumen de las conclusiones obtenidas:
+- La tasa de cancelación promedio es 27%.
+- Los siguientes perfiles mostraron mayor tasa de cancelación:
+  - Menor antigüedad
+  - Mayor precio del plan
+  - Edad mayores de 65 años.
+  - Sin pareja / hijos presetan.
+  -  De aquellos que poseen internet:
+  -    Utilizar fibra óptica.
+  -    Suscriptos a ningún o un servicio (sin contar streaming)
+  - Plan mensual
+  - Tipo de pago cheque electrónico
+  - Factura electrónica   
+
+## **RECOMENDACIONES**
+
+Se presenta un resumen de las estrategias propuestas, para mayor detalle consultar el informe final.
+
+- Conservación de clientes nuevos: Enfocar los esfuerzos (promociones, descuentos) en los clientes nuevos (menos de 6 meses). Pasado este momento la tasa de cancelación baja mucho.
+- Reajuste del costo de los planes: Es fundamental optimizar los costos de los planes y servicios para disminuir la cancelación. En particular los planes de costo $60 presentan una tasa de cancelación menor a la esperado, surgiendo la posibilidad de ofrecer dicho plan a aquellos pagando más o incluso a aquellos clientes con planes levemente más baratos.
+- Protección de los clientes: Preparar ofertas, descuentos, beneficios extra para los clientes que presentan perfiles de riesgo.
+- Recaptura de clientes con baja chance de cancelación: En lugar de llamar nuevos clientes, invertir esfuerzo en convencer a clientes de bajo riesgo de volver a la empresa
+- Captura de clientes de bajo riesgo: Al intentar conseguir nuevos clientes, focalizar en personas menores de 65 años, con familia (pareja o dependientes), con infraestructura para internet por DSL. Ofrecerles los servicios que presenten menor tasa de cancelación.
+- Mejora del servicio: Se detectaron irregularidades que requieren una investigación más profunda:
+-    Internet por fibra óptica presentó una tasa de cancelación muy alta. 
+-    Electronic check fué el único medio de pago con tasa de cancelación alta.
+-    Los planes de $60 y $110 poseen menor tasa de cancelación que otros planes. 
+
+## **LIMITACIONES**
+
+- Este análisis se realizó asumiendo que la base de datos representa las cancelaciones (y no cancelaciones) dentro de un mes dado y no a lo largo del tiempo, de ser el segundo caso el análisis no es valido y se requeriría un enfoque análisis de datos de duración/supervivencia.
+- No se tiene información de planes o descuentos aplicados. La estructura de los gastos mensuales es propia de una mezcla de poblaciones (tipo de productos distintos).
+- Faltan variables básicas como edad del cliente, nivel de estudios, profesión (o situación laboral), raza, nivel socio-económico, dirección o al menos barrio / ciudad.
+- Información sobre el uso del servicio podría ayudar a identificar perfiles.
+
 
 
 ## **DICCIONARIO**
@@ -128,5 +168,21 @@ El mismo cuenta con:
 - bank_transfer_automatic: toma el valor 1 si el método de pago es de ese tipo, 0 en otro caso.
 - credit_card_automatic: toma el valor 1 si el método de pago es de ese tipo, 0 en otro caso.
 - automatic_payment: : toma el valor 1 si el método de pago es credit_card_automatic o bank_transfer_automatic, 0 en otro caso.
+
+## **GRÁFICOS DE MUESTRA**
+
+<img width="633" height="448" alt="Evasíon de los clientes según antigüedad y cuenta promedio" src="https://github.com/user-attachments/assets/f70f3715-6606-47b7-a364-cb457c3a6f24" />
+
+<img width="616" height="447" alt="Evasíon de los clientes según cantidad de servicios suscriptos" src="https://github.com/user-attachments/assets/c7ff3a4c-25b2-4168-adf0-db43779b962d" />
+
+<img width="393" height="571" alt="Tabla de frecuencias de las variables del cliente y su porcentaje de cancelación" src="https://github.com/user-attachments/assets/55dc2e18-f470-496e-9abf-4a6f4f9ac46c" />
+
+
+
+
+
+
+
+
 
 
